@@ -1,0 +1,64 @@
+{% load static %}
+{% include "navbar.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniWeb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <style>
+      .card {
+        border-radius: 1em;
+        text-align: center;
+        padding: 1em;
+      }
+      .card:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+   }
+    </style>
+</head>
+<body>
+    <div class="container text-center my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'hory.jpg' %}" class="card-img-top" alt="anime3">
+           <div class="card-body">
+            <h5 class="card-title">Хоримия</h5>
+            <p class="card-text">Лучшая романтика</p>
+            <a href="https://jut.su/horimiya/" target="_blank" class="btn btn-primary">
+              Go to watching
+            </a>
+          </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+        <img src="{% static 'takeaway.jpg' %}" class="card-img-top" alt="унеси меня на луну" width="290">
+        <div class="card-body">
+            <h5 class="card-tatle">Унеси меня на луну
+            </h5>
+            <p class="card-text">Хорошее аниме на вечер</p>
+            <a href="" target="_blank" class="btn btn-primary">Go to watching</a>
+        </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+        <img src="{% static 'yourname.jpg' %}" class="card-img-top" alt="Your Name" width="280">
+        <div class="card-body">
+            <h5 class="card-title">Твое Имя</h5>
+            <p class="card-text">Аниме что бы расслабится</p>
+            <a href="https://yummyanime.tv/86-tvoe-imja.html"
+            class="btn btn-primary" target="_blank">
+            Go to watching
+            </a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
